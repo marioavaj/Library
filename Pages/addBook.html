@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/addTitle.css" rel="stylesheet">
+
+    <script src="../js/addBook.js"></script>
+
+
+
+    <title>Add title</title>
+</head>
+
+<body>
+
+    <div class="center"><img id="lmsLogo" src="../Images/logoLMS-removebg-preview.png" alt="lmsLogo"></div>
+
+    <div id="booksInRow"></div>
+    <div class="navbar">
+        <div class="dropdown">
+            <a class="dropbtn" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home
+            </a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-book" aria-hidden="true"></i> Titles
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="books.html">Books</a>
+                <a href="dvd.html">DVD</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-users" aria-hidden="true"></i> Members
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="allMembers.html">All Members</a>
+                <a href="addMember.html">Add member</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-address-book" aria-hidden="true"></i> Rentals
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="rentTitle.html">Rent a title</a>
+                <a href="#">Return a title</a>
+                <a href="#">Prolong the rental</a>
+                <a href="#">Show all rentals</a>
+                <a href="#">Show rentals past due</a>
+                <a href="#">Show Queue</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="dropbtn" href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Notifications
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <div class="formWrapper">
+
+        <div class="inputForm">
+            <form id="formAddItem" onsubmit="saveNewBook(event)">
+                <h2><i class="fa fa-plus-square" aria-hidden="true"></i> Add new book form</h2>
+                <br>
+                <br>
+                <input class="inputText" type="text" id="author" name="author" placeholder="Author's name" required><br>
+
+
+                <input class="inputText" id="name" name="name" placeholder="Title name" required><br>
+
+
+                <input class="inputText" id="availableCopies" name="availableCopies" placeholder="Available copies" required><br>
+
+                <input class="inputText" id="totalAvailableCopies" name="totalAvailableCopies"
+                    placeholder="Total available copies" required><br>
+
+                <input class="inputText" type="number" id="numberOfPages" name="numberOfPages"
+                    placeholder="Number of pages" required><br>
+
+                <input class="inputText" id="isbn" name="ISBN" placeholder="ISBN"required><br>
+
+
+
+
+                <button class="submit" type="submit" value="Submit">Submit</button>
+            </form>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+#allTables {
+  border-collapse: collapse;
+  width: 72%;
+  
+  margin: 2em auto;
+}
+
+thead {
+  background-color: #333;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #dedede;
+}
+
+td, th {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+th {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+td {
+  font-weight: normal;
+}
+
+#allTables a{
+text-decoration: none;
+color: black;
+
+}
+
+

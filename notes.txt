@@ -1,0 +1,121 @@
+[
+  {
+    "name": "The Shawshank Redemption",
+    "author": "Frank Darabont",
+    "numberOfChapters": 18,
+    "numberOfMinutes": 142,
+    "availableCopies": 3,
+    "totalAvailableCopies": 3
+  },
+  {
+    "name": "The Godfather",
+    "author": "Francis Ford Coppola",
+    "numberOfChapters": 12,
+    "numberOfMinutes": 175,
+    "availableCopies": 2,
+    "totalAvailableCopies": 2
+  },
+  {
+    "name": "The Dark Knight",
+    "author": "Christopher Nolan",
+    "numberOfChapters": 14,
+    "numberOfMinutes": 152,
+    "availableCopies": 4,
+    "totalAvailableCopies": 4
+  },
+  {
+    "name": "Pulp Fiction",
+    "author": "Quentin Tarantino",
+    "numberOfChapters": 7,
+    "numberOfMinutes": 154,
+    "availableCopies": 1,
+    "totalAvailableCopies": 1
+  },
+  {
+    "name": "The Lord of the Rings: The Fellowship of the Ring",
+    "author": "Peter Jackson",
+    "numberOfChapters": 20,
+    "numberOfMinutes": 178,
+    "availableCopies": 2,
+    "totalAvailableCopies": 2
+  },
+  {
+    "name": "Forrest Gump",
+    "author": "Robert Zemeckis",
+    "numberOfChapters": 15,
+    "numberOfMinutes": 142,
+    "availableCopies": 0,
+    "totalAvailableCopies": 0
+  },
+  {
+    "name": "The Matrix",
+    "author": "Lana Wachowski, Lilly Wachowski",
+    "numberOfChapters": 11,
+    "numberOfMinutes": 136,
+    "availableCopies": 5,
+    "totalAvailableCopies": 5
+  },
+  {
+    "name": "Star Wars: Episode IV - A New Hope",
+    "author": "George Lucas",
+    "numberOfChapters": 10,
+    "numberOfMinutes": 121,
+    "availableCopies": 2,
+    "	": 2
+  },
+  {
+    "name": "Jurassic Park",
+    "author": "Steven Spielberg",
+    "numberOfChapters": 12,
+	
+	
+	
+	
+	let xhr = new XMLHttpRequest();
+
+xhr.open("POST", "http://localhost:5000/api/Dvds");
+
+xhr.setRequestHeader("Accept", "application/json");
+
+xhr.setRequestHeader("Content-Type", "application/json");
+
+
+
+
+xhr.onreadystatechange = function () {
+
+ if (xhr.readyState === 4) {
+
+ console.log(xhr.status);
+
+ console.log(xhr.responseText);
+
+}
+};
+
+let data = `
+{ 
+    
+    "name": "Star Wars: Episode IV - A New Hope",
+    "author": "George Lucas",
+    "numberOfChapters": 10,
+    "numberOfMinutes": 121,
+    "availableCopies": 2,
+    "totalAvailableCopies": 2
+  }
+`;
+
+xhr.send(data);
+
+
+radiobuttons
+     <label class="control control-radio">
+                    Book
+                    <input type="radio" name="radio" checked="checked" />
+                    <div class="control_indicator"></div>
+                </label>
+                <label class="control control-radio">
+                    DVD
+                    <input type="radio" name="radio" />
+                    <div class="control_indicator"></div>
+                </label>
